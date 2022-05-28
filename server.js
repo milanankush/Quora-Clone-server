@@ -15,11 +15,6 @@ app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 
 //cors
-// app.use((req, res, next) => {
-//   req.header("Access-Control-Allow-Origin", "*");
-//   req.header("Access-Control-Allow-Headers", "*");
-//   next();
-// });
 app.use(cors());
 
 //routes
